@@ -21,10 +21,18 @@ Route::get('/tentangkami', function () {
     return view('page2');
 });
 
-Route::get('/home-en', function() {
+Route::get('/home-en', function () {
     return view('page1en');
 });
 
-Route::get('/about-us', function() {
+Route::get('/about-us', function () {
     return view('page2en');
+});
+
+Route::get('/login', function () {
+    return view('auth/login');
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::view('admin');
 });
