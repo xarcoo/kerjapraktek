@@ -56,6 +56,9 @@
                             <li class="nav-item">
                                 <a class="nav-link nav-bahasa" href="{{ url('/home-en') }}">ID - EN</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
