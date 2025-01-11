@@ -1,0 +1,300 @@
+/* section hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.hero-content {
+    color: #f8fafc;
+}
+
+.btn-peta {
+    background-color: #c7eeff;
+    font-weight: 700;
+}
+
+#nama-perusahaan {
+    font-size: 48px;
+}
+
+#lokasi-perusahaan {
+    font-size: 20px;
+}
+
+/* section sekilas tentang perusahaan */
+.tentang {
+    /* height: 100vh; */
+    background-color: #f8fafc;
+}
+
+.container-tentang {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* height: 100%; */
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+/* bagian kiri sejarah */
+.left {
+    height: 100%;
+    width: 60%;
+    padding: 10em 5em 10em 15em;
+}
+
+.container-left {
+    margin: auto;
+}
+
+.tentang-anugrah-tambang {
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 4vh;
+}
+
+.sejarah-singkat {
+    flex-direction: column;
+}
+
+.content-tentang {
+    text-align: justify;
+}
+
+.container-judul-tentang {
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    border-left: 2px solid black;
+    padding-left: 1vh;
+}
+
+/* bagian kanan sejarah */
+.right {
+    width: 40%;
+    padding: 10em 15em 10em 5em;
+
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr 1fr;
+
+    grid-template-areas: "thnbrdiri . anakusaha" ". . anakusaha" "prdkutama . anakusaha" "prdkutama . ." "prdkutama . luastnh"
+}
+
+.container-tahun-berdiri,
+.container-luas-tanah,
+.container-anak-perusahaan,
+.container-produk-utama {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.luas-tanah,
+.anak-perusahaan,
+.produk-utama,
+.tahun-berdiri {
+    background-color: #c7eeff;
+}
+
+.tahun-berdiri,
+.luas-tanah {
+    padding: 0vh 1vw;
+}
+
+.anak-perusahaan,
+.produk-utama {
+    padding: 0vh 2vw;
+}
+
+.tahun-berdiri {
+    grid-area: thnbrdiri;
+    justify-content: center;
+}
+
+.luas-tanah {
+    grid-area: luastnh;
+    justify-content: center;
+}
+
+.anak-perusahaan {
+    grid-area: anakusaha;
+    justify-content: center;
+}
+
+.produk-utama {
+    grid-area: prdkutama;
+    justify-content: center;
+}
+
+.btn-detail {
+    text-align: left;
+}
+
+/* section produk */
+.produk {
+    margin-bottom: 10vh;
+}
+
+.produk-title {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 1vh;
+    margin-bottom: 4vh;
+}
+
+.produk-gambar img {
+    max-height: 400px;
+}
+
+/* section video */
+.video {
+    margin-bottom: 6vh;
+}
+
+.video-title {
+    border-right: 2px solid black;
+    text-align: left;
+    background-color: #c7eeff;
+}
+
+.video-container {
+    width: 75vw;
+    height: auto;
+    margin-left: 5vw;
+}
+
+/* section galeri */
+.galeri-title {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 1vh;
+    margin-bottom: 4vh;
+}
+
+@media (max-width: 1600px) {
+    .tentang {
+        height: 80%;
+    }
+
+    .container-tentang {
+        display: flex;
+        flex-direction: row;
+        /* height: 50em; */
+    }
+
+    .left {
+        margin: 50px 50px 20px 50px;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        /* height: fit-content; */
+    }
+
+    .right {
+        padding: 0 50px 50px 50px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .tentang {
+        height: 100%;
+    }
+
+    .left {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .sejarah-singkat {
+        overflow: auto;
+        min-height: 300px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .produk-gambar .col-md-4{
+        width: 33.33%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .galeri .col-md-4{
+        width: 33.33%;
+        height: auto;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 470px) {
+    .tentang {
+        min-height: 100px;
+        overflow: auto;
+        margin-bottom: 2em;
+    }
+
+    .right {
+        margin-top: 2em;
+        display: flex;
+        gap: 2em;
+    }
+
+    .luas-tanah,
+    .anak-perusahaan,
+    .produk-utama,
+    .tahun-berdiri {
+        height: 8em;
+    }
+
+    .video-item {
+        flex-direction: column;
+    }
+
+    .video-title {
+        background: none;
+        text-align: center;
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding-bottom: 2vh;
+    }
+
+    .video-container {
+        padding-top: 2vh;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .produk-gambar .col-md-4{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,129 @@
+/* section sejarah */
+
+.sejarah-title {
+  margin-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+/* .sejarah-tahun {
+  padding-bottom: 10vh;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #c7eeff;
+}
+
+.line {
+  width: 150px;
+  height: 3px;
+  background-color: #0b1519;
+} */
+
+.sejarah-paragraf {
+  text-align: justify;
+  padding: 0vh 5vw;
+}
+
+
+/* section visi misi */
+.visi-container {
+  padding: 2vh 0vw 4vh 0vw;
+}
+
+.visi-title {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+}
+
+.misi-title {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding-bottom: 1vh;
+  margin: 2vh 0vw;
+}
+
+.misi-container {
+  justify-content: space-between;
+  padding-left: 20vw;
+}
+
+.misi-container-en {
+  justify-content: space-between;
+  padding-left: 25vw;
+}
+
+.circle {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  background-color: #c7eeff;
+  margin-bottom: 2vh;
+}
+
+.satu,
+.dua,
+.tiga,
+.empat {
+  padding-top: 0.5vh;
+}
+
+.misi-1,
+.misi-2,
+.misi-3,
+.misi-4 {
+  margin-left: 2vw;
+  text-align: justify;
+}
+
+
+@media (max-width: 1600px) {
+  .visi-container {
+    padding: 0vh 4vw;
+  }
+
+  .misi-container {
+    padding-left: 10vw;
+    padding-right: 8vw;
+  }
+
+  .misi-container-en {
+    padding-left: 25vw;
+    padding-right: 8vw;
+  }
+}
+
+@media (max-width: 1300px) {
+  .misi-container {
+    padding-left: 6vw;
+  }
+
+  .misi-container-en {
+    padding-left: 15vw;
+  }
+
+  .misi-item {
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .misi-container-en {
+    padding-left: 10vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .misi-container,
+  .misi-container-en {
+    padding-left: 4vw;
+  }
+
+  .circle {
+    margin-top: 2vh;
+  }
+}
